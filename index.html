@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具集合</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-title {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .tool-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #0089ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #0073e6;
+            box-shadow: 0 4px 12px rgba(0, 137, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>实用工具集合</h1>
+        
+        <div class="tools-grid">
+            <!-- 进制转换器卡片 -->
+            <div class="tool-card">
+                <h2 class="tool-title">进制转换器</h2>
+                <p class="tool-description">
+                    支持2-32进制快速转换<br>
+                    自动处理负数，一键互换进制
+                </p>
+                <a href="converter.html" class="nav-button">立即使用</a>
+            </div>
+
+            <!-- 计算器卡片 -->
+            <div class="tool-card">
+                <h2 class="tool-title">科学计算器</h2>
+                <p class="tool-description">
+                    支持四则运算和连续计算<br>
+                    简洁界面，流畅操作体验
+                </p>
+                <a href="计算器.html" class="nav-button">立即使用</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
